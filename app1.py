@@ -6,14 +6,12 @@
 
 """
 
-#!flask/bin/python
+# !flask/bin/python
 from flask import Flask, jsonify
 from flask import abort
 from flask import make_response
 from flask import request
 from flask import url_for
-
-
 
 app = Flask(__name__)
 
@@ -111,9 +109,9 @@ def make_public_task(task):
 
 if __name__ == '__main__':
     config = dict(
-        debug = True,
-        host = '0.0.0.0',
-        port = 3000,
-        threaded = True  # 实现多线程服务
+        debug=True,
+        host='0.0.0.0',
+        port=3000,
+        threaded=True  # 实现多线程服务
     )
     app.run(**config)
