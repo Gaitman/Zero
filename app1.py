@@ -33,6 +33,11 @@ tasks = [
 ]
 
 
+@app.route('/')
+def index():
+    return "Hello, World!"
+
+
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
     return jsonify({'tasks': tasks})
@@ -105,4 +110,10 @@ def make_public_task(task):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    config = dict(
+        debug = True,
+        host = '0.0.0.0',
+        port = 3000,
+        threaded = True  # 实现多线程服务
+    )
+    app.run(**config)
