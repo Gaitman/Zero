@@ -33,7 +33,7 @@ tasks = [
 
 @app.route('/')
 def index():
-    return "Hello, World!"
+    return "<h1>Hello, World!<h1>"
 
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
