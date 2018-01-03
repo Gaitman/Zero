@@ -111,7 +111,7 @@ if __name__ == '__main__':
     config = dict(
         debug=True,
         host='0.0.0.0',
-        port=3000,
-        threaded=True  # 实现多线程服务
+        port=2000,   # 1024以内的端口是保留端口，有管理员权限才能用
+        threaded=True  # 实现多线程服务,优化性能
     )
     app.run(**config)
