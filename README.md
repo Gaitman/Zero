@@ -1,3 +1,2 @@
-
-# 这是使用Flask建造的一个web service项目，详情如下
-
+# 这是使用Flask建造的一个欢迎首页
+# 首页1.0：www.gatler.cc:1024
